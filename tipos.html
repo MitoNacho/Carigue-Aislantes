@@ -16,10 +16,10 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html">Carigue Aislantes</a>
+                <a class="navbar-brand fw-bold" href="index.html">Carigue Aislantes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
@@ -30,7 +30,7 @@
         </nav>
         
         <!-- Contenedor principal -->
-        <div class="container mt-2 mb-4">
+        <div class="container mt-2 mb-4 fade-in">
             <!-- Título centrado -->
             <div class="row mb-4">
                 <div class="col-12 text-center">
@@ -58,7 +58,9 @@
                 <button class="btn btn-primary" onclick="goBack()">Volver</button>
             </div>
         </div>
-        
+        <div class="adorno mb-4 fade-in">
+            <img src="assets/addd.png" alt="Carigue Aislantes. Desde 2005">
+        </div>
         <!-- Footer -->
         <footer class="py-5 bg-dark">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Carigue Aislantes 2024</p></div>
@@ -87,8 +89,8 @@
                         id: 1,
                         name: 'Cartón Presspan',
                         types: [
-                            { name: 'Presspan-3050', description: '' , pdf: '/Carigue-Aislantes/fichaafr/3050.pdf' },
-                            { name: 'Presspan-3052', description: '', pdf: '/Carigue-Aislantes/fichaafr/3052.pdf' }
+                            { name: 'Presspan-3050', description: '' , pdf: '/Carigue-Aislantes/fichacarton/3050.pdf' },
+                            { name: 'Presspan-3052', description: '', pdf: '/Carigue-Aislantes/fichacarton/3052.pdf' }
                         ]
                     },
 
@@ -99,7 +101,7 @@
                         types: [
                             { name: 'Tercott-CF', description: '' , pdf: '/Carigue-Aislantes/fichacarton/CF.pdf' },
                             { name: 'Tercott-K', description: '', pdf: '/Carigue-Aislantes/fichacarton/K.pdf' },
-                            { name: 'Tercott-MTS', description: ''}
+                            { name: 'Tercott-MTS', description: '', pdf: '/Carigue-Aislantes/fichacarton/mts.pdf' }
                         ]
                     },
 
@@ -108,7 +110,7 @@
                         id: 3,
                         name: '',
                         types: [
-                            { name: 'Thernophase', description: 'Grosor: 0,30mm / 0,40mm' }
+                            { name: 'Thernophase', description: 'Grosor: 0,30mm / 0,40mm', pdf: '/Carigue-Aislantes/fichacarton/thernophase.pdf' }
                         ]
                     },
 
@@ -140,7 +142,7 @@
                         id: 7,
                         name: '',
                         types: [
-                            { name: 'Kapton (Poliimida)', description: 'Se pueden cortar piezas a medida, con y sin adhesivo.' }
+                            { name: 'Kapton (Poliimida)', description: 'Se pueden cortar piezas a medida, con y sin adhesivo.' , pdf: '/Carigue-Aislantes/fichacarton/kapton.pdf' }
                         ]
                     },
 
@@ -148,7 +150,7 @@
                         id: 8,
                         name: '',
                         types: [
-                            { name: 'Kapton Glass', description: 'Se pueden cortar piezas a medida.' }
+                            { name: 'Kapton Glass', description: 'Se pueden cortar piezas a medida.' , pdf: '/Carigue-Aislantes/fichacarton/kglass.pdf' }
                         ]
                     },
 
@@ -164,15 +166,15 @@
                         id: 10,
                         name: '',
                         types: [
-                            { name: 'Tubo Baquelita', description: '' , pdf: '/Carigue-Aislantes/fichacarton/hp2061.pdf' }
+                            { name: 'Tubo Baquelita', description: '' }
                         ]
                     },
 
                     {
                         id: 11,
-                        name: '',
+                        name: 'Placa algodon-EF',
                         types: [
-                            { name: 'Placa algodon-EF', description: 'Falta info.' }
+                            { name: 'Algodón fenólico HGW2082', description: '' , pdf: '/Carigue-Aislantes/fichacarton/algodonf.pdf'}
                         ]
                     },
 
@@ -180,7 +182,7 @@
                         id: 12,
                         name: '',
                         types: [
-                            { name: 'Barra algodon-EF', description: 'Falta info.' }
+                            { name: 'Barra algodon-EF', description: '' }
                         ]
                     },
 
@@ -204,7 +206,7 @@
                         id: 15,
                         name: '',
                         types: [
-                            { name: 'Barra vidrio resina Epoxy', description: 'Falta info.' }
+                            { name: 'Barra vidrio resina Epoxy', description: '' }
                         ]
                     },
 
@@ -212,10 +214,590 @@
                         id: 16,
                         name: '',
                         types: [
-                            { name: 'Tubo vidrio Epoxy G-11', description: '', pdf: '/Carigue-Aislantes/fichacarton/G11.pdf' }
+                            { name: 'Tubo vidrio Epoxy G-11', description: '' }
+                        ]
+                    },
+
+                    {
+                        id: 17,
+                        name: 'Barniz de secado al aire',
+                        types: [
+                            { name: 'Royalac 30', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Royalac 125', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Royalac 129', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 18,
+                        name: '',
+                        types: [
+                            { name: 'Barniz Antiflash G-142', description: 'Se puede suministrar en botes de 1kg, 5kg, 25kg y en formato spray.', pdf: '/Carigue-Aislantes/fichabarniz/a142.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 19,
+                        name: 'Barniz de secado al horno',
+                        types: [
+                            { name: 'Royalac 521', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'E-524 TS', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 20,
+                        name: 'Resina de Epoxy',
+                        types: [
+                            { name: 'Royapox 5050', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Royapox 5050 CD', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Endurecedor Royal Diamond', description: '' }
+                        ]
+                    },
+
+                    {
+                        id: 21,
+                        name: '',
+                        types: [
+                            { name: 'Diluyente F5 Royal Diamond', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 22,
+                        name: 'Resina de poliéster',
+                        types: [
+                            { name: 'Diapol 507', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Diapol 508', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Diapol 509', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' },
+                            { name: 'Catalizador Royal Diamond', description: '' }
+                        ]
+                    },
+
+                    {
+                        id: 23,
+                        name: '',
+                        types: [
+                            { name: 'Spray Antiflash', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 24,
+                        name: '',
+                        types: [
+                            { name: 'Spray barniz secado al aire', description: '', pdf: '/Carigue-Aislantes/fichabarniz/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 25,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas de madera', description: '', pdf: '/Carigue-Aislantes/fichacuna/cmadera.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 26,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas de poliéster', description: '', pdf: '/Carigue-Aislantes/fichacuna/poli.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 27,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas Triplex F20.08', description: '', pdf: '/Carigue-Aislantes/fichacuna/triplex.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 28,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas Thernomid 10.04', description: '', pdf: '/Carigue-Aislantes/fichacuna/thernomid.pdf' }
+                        ]
+                    },
+
+                    
+                    {
+                        id: 29,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas Tufquin', description: '', pdf: '/Carigue-Aislantes/fichacuna/tufquin.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 30,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas vidrio Epoxy G-11', description: '', pdf: '/Carigue-Aislantes/fichacuna/cepoxy.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 31,
+                        name: '',
+                        types: [
+                            { name: 'Cuñas para motores', description: 'Piezas a medida para diferentes tipos de motor' }
+                        ]
+                    },
+
+                    {
+                        id: 32,
+                        name: 'Cuñas poltrusionadas',
+                        types: [
+                            { name: 'Cuñas poltrusionadas trapezoidales', description: '', pdf: '/Carigue-Aislantes/fichacuna/poltrusion.pdf' },
+                            { name: 'Cuñas poltrusionadas perfil hueso de perro', description: '', pdf: '/Carigue-Aislantes/fichacuna/poltrusion.pdf' },
+                            { name: 'Cuñas poltrusionadas perfil romo', description: '', pdf: '/Carigue-Aislantes/fichacuna/poltrusion.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 33,
+                        name: '',
+                        types: [
+                            { name: 'Hilo Cu. Desnudo', description: '', pdf: '/Carigue-Aislantes/fichahilo/cu-desnudo.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 34,
+                        name: '',
+                        types: [
+                            { name: 'Hilo Cu. Esmaltado-HC', description: '', pdf: '/Carigue-Aislantes/fichahilo/esmaltado.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 35,
+                        name: '',
+                        types: [
+                            { name: 'Hilo Cu. Esmaltado 2 capas de vidrio', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 36,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. Desnuda', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 37,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. Esmaltada', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 38,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. Esmaltada 2 capas de vidrio', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 39,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. Aislada con Kapton', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 40,
+                        name: '',
+                        types: [
+                            { name: 'Hilo de Nicrón', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 41,
+                        name: '',
+                        types: [
+                            { name: 'Hilo de estaño para soldar', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 42,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. ETP dura', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 43,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. Flexible aislada', description: '', pdf: '/Carigue-Aislantes/fichahilo/pletina-flexible.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 44,
+                        name: '',
+                        types: [
+                            { name: 'Pletina Cu. Roscada', description: '', pdf: '/Carigue-Aislantes/fichahilo/pletina-roscada.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 45,
+                        name: '',
+                        types: [
+                            { name: 'Plancha Cu.', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 46,
+                        name: '',
+                        types: [
+                            { name: 'Barra Cu.', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 47,
+                        name: '',
+                        types: [
+                            { name: 'Hexágono de Latón', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 48,
+                        name: '',
+                        types: [
+                            { name: 'Redondo de Latón', description: '', pdf: '/Carigue-Aislantes/fichahilo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 49,
+                        name: '',
+                        types: [
+                            { name: 'Cinta de mica', description: '', pdf: '/Carigue-Aislantes/fichamica/cinta-mica.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 50,
+                        name: '',
+                        types: [
+                            { name: 'Placa de mica flexible P5450', description: '', pdf: '/Carigue-Aislantes/fichamica/flexible.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 51,
+                        name: 'Placas de mica',
+                        types: [
+                            { name: 'Placa de mica flexible P5450', description: '', pdf: '/Carigue-Aislantes/fichamica/flexible.pdf' },
+                            { name: 'Placa de mica rígida calefacción', description: '', pdf: '/Carigue-Aislantes/fichamica/calefaccion.pdf' },
+                            { name: 'Placa de mica rígida colectores', description: '', pdf: '/Carigue-Aislantes/fichamica/colectores.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 52,
+                        name: 'Teflón PTFE',
+                        types: [
+                            { name: 'Barras y tubos PTFE-Teflón', description: '', pdf: '/Carigue-Aislantes/fichamica/Teflon.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 53,
+                        name: '',
+                        types: [
+                            { name: 'Motor monofásico', description: '', pdf: '/Carigue-Aislantes/fichamotor/monofasicos.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 54,
+                        name: '',
+                        types: [
+                            { name: 'Motor trifásico', description: '', pdf: '/Carigue-Aislantes/fichamotor/trifasicos.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 55,
+                        name: '',
+                        types: [
+                            { name: 'Motor aspiración periférico 240V', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 56,
+                        name: '',
+                        types: [
+                            { name: 'Motor de corte directo 230-400V', description: '', pdf: '/Carigue-Aislantes/fichamotor/corte-directo.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 57,
+                        name: '',
+                        types: [
+                            { name: 'Ventilador adaptable de plástico', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 58,
+                        name: '',
+                        types: [
+                            { name: 'Ventilador adaptable de aluminio', description: '', pdf: '/Carigue-Aislantes/fichamotor/ventilador-aluminio.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 59,
+                        name: '',
+                        types: [
+                            { name: 'Caja de bornas de plástico', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 60,
+                        name: '',
+                        types: [
+                            { name: 'Caja de bornas metálica', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 61,
+                        name: '',
+                        types: [
+                            { name: 'Placa de bornas adaptable', description: '', pdf: '/Carigue-Aislantes/fichamotor/bornas.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 62,
+                        name: '',
+                        types: [
+                            { name: 'Protector de ventilador', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 63,
+                        name: '',
+                        types: [
+                            { name: 'Condensador de arranque', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 64,
+                        name: '',
+                        types: [
+                            { name: 'Condensador permanente', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 65,
+                        name: '',
+                        types: [
+                            { name: 'Juego de escobillas para herramienta', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 66,
+                        name: '',
+                        types: [
+                            { name: 'Escobillas de carbón a medida', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 67,
+                        name: '',
+                        types: [
+                            { name: 'Porta-escobillas', description: '', pdf: '/Carigue-Aislantes/fichamotor/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 68,
+                        name: '',
+                        types: [
+                            { name: 'Poleas de motor', description: '', pdf: '/Carigue-Aislantes/fichamotor/Poleas.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 69,
+                        name: '',
+                        types: [
+                            { name: 'Tubo PVC flexible', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 70,
+                        name: '',
+                        types: [
+                            { name: 'Tubo vidrio virgen', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 71,
+                        name: '',
+                        types: [
+                            { name: 'Tubo recocido', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 72,
+                        name: '',
+                        types: [
+                            { name: 'Tubo poliuretano', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 73,
+                        name: '',
+                        types: [
+                            { name: 'Tubo silicona', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 74,
+                        name: '',
+                        types: [
+                            { name: 'Tubo termorretractil', description: '', pdf: '/Carigue-Aislantes/fichatubo/termo.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 75,
+                        name: '',
+                        types: [
+                            { name: 'Cinta de vidrio virgen', description: '', pdf: '/Carigue-Aislantes/fichatubo/cinta-fv.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 76,
+                        name: 'Cintas de algodón',
+                        types: [
+                            { name: 'Cinta de algodón -T', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cinta-algodon.pdf' },
+                            { name: 'Cinta de algodón -E', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cinta-algodon.pdf' },
+                            { name: 'Cinta de algodón Sarga', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cinta-algodon.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 77,
+                        name: '',
+                        types: [
+                            { name: 'Cinta de poliéster', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 78,
+                        name: '',
+                        types: [
+                            { name: 'Cordón vidrio virgen', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cordon-fv.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 79,
+                        name: '',
+                        types: [
+                            { name: 'Burlete tejido de vidrio', description: '', pdf: '/Carigue-Aislantes/fichatubo/Burlete.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 80,
+                        name: '',
+                        types: [
+                            { name: 'Cordel de atados', description: '', pdf: '/Carigue-Aislantes/fichatubo/.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 81,
+                        name: '',
+                        types: [
+                            { name: 'Zuncho', description: '', pdf: '/Carigue-Aislantes/fichatubo/zuncho.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 82,
+                        name: '',
+                        types: [
+                            { name: 'Cinta vidrio adhesiva', description: '', pdf: '/Carigue-Aislantes/fichatubo/cinta-vad.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 83,
+                        name: '',
+                        types: [
+                            { name: 'Cinta poliéster adhesiva', description: '', pdf: '/Carigue-Aislantes/fichatubo/cinta-pad.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 84,
+                        name: '',
+                        types: [
+                            { name: 'Cinta de Kapton adhesiva', description: '', pdf: '/Carigue-Aislantes/fichatubo/Kapton-adhesivo.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 85,
+                        name: 'Kit de aislantes a medida',
+                        types: [
+                            { name: 'Kit Civia', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cinta-algodon.pdf' },
+                            { name: 'Kit ejemplo 2', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cinta-algodon.pdf' },
+                            { name: 'Kit ejemplo 3', description: '', pdf: '/Carigue-Aislantes/fichatubo/Cinta-algodon.pdf' }
+                        ]
+                    },
+
+                    {
+                        id: 86,
+                        name: 'Mecanizado de piezas',
+                        types: [
+                            { name: 'Tubo Baquelita', description: '' },
+                            { name: 'Placa vidrio Epoxy G-11', description: '', pdf: '/Carigue-Aislantes/fichacarton/G11.pdf' },
+                            { name: 'Tubo vidrio Epoxy G-11', description: '' },
+                            { name: 'Cuñas para motores', description: 'Piezas a medida para diferentes tipos de motor' },
+                            { name: 'Barras y tubos PTFE-Teflón', description: '', pdf: '/Carigue-Aislantes/fichamica/Teflon.pdf' }
                         ]
                     }
-
 
                 ];
                 
@@ -234,7 +816,7 @@
                         `;
                         // Verifica si existe el PDF para mostrar el botón
                 if (type.pdf) {
-                    typeDetails += `<a href="${type.pdf}" target="_blank" class="btn btn-primary">Ver Ficha Técnica</a>`;
+                    typeDetails += `<a href="${type.pdf}" target="_blank" class="btn btn-primary zoom-on-haver">Ver Ficha Técnica</a>`;
                 }
                 
                 typeDetails += `

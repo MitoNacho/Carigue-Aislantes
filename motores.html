@@ -16,10 +16,10 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html">Carigue Aislantes</a>
+                <a class="navbar-brand fw-bold" href="index.html">Carigue Aislantes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
@@ -29,7 +29,7 @@
             </div>
         </nav>
         <!-- Contenedor principal -->
-    <div class="container mt-2 mb-4">
+    <div class="container mt-2 mb-4 fade-in">
         <!-- Título centrado -->
         <div class="row">
             <div class="col-12 text-center">
@@ -61,9 +61,9 @@
         <div class="row mt-4 ms-2 me-2 text-center">
             <!-- Producto 1 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/1.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/1.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(53)">
                     <div class="card h-100">
-                        <img src="img-motor/1.png" class="card-img-top" alt="Producto 1">
+                        <img src="img-motor/1.png" class="card-img-top" alt="Motor monofásico">
                         <div class="card-body btn btn-primary border border-primary">
                             <h5 class="card-title">Motor monofásico</h5>
                         </div>
@@ -72,9 +72,9 @@
             </div>
             <!-- Producto 2 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
-                <a href="img-motor/2.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/2.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(54)">
                     <div class="card h-100">
-                        <img src="img-motor/2.png" class="card-img-top" alt="Producto 2">
+                        <img src="img-motor/2.png" class="card-img-top" alt="Motor trifásico">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Motor trifásico</h5>
                         </div>
@@ -83,9 +83,9 @@
             </div>
             <!-- Producto 3 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/3.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/3.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(55)">
                     <div class="card h-100">
-                        <img src="img-motor/3.png" class="card-img-top" alt="Producto 3">
+                        <img src="img-motor/3.png" class="card-img-top" alt="Motor aspiración periférico 240V">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Motor aspiración periférico 240V</h5>
                         </div>
@@ -94,9 +94,9 @@
             </div>
             <!-- Producto 4 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/4.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/4.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(56)">
                     <div class="card h-100">
-                        <img src="img-motor/4.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/4.png" class="card-img-top" alt="Motor de corte directo 230-400V">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Motor de corte directo 230-400V</h5>
                         </div>
@@ -105,9 +105,9 @@
             </div>
             <!-- Producto 5 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/5.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/5.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(57)">
                     <div class="card h-100">
-                        <img src="img-motor/5.png" class="card-img-top" alt="Producto 5">
+                        <img src="img-motor/5.png" class="card-img-top" alt="Ventilador adaptable de plástico">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Ventilador adaptable de plástico</h5>
                         </div>
@@ -116,9 +116,9 @@
             </div>
             <!-- Producto 6 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/6.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/6.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(58)">
                     <div class="card h-100">
-                        <img src="img-motor/6.png" class="card-img-top" alt="Producto 6">
+                        <img src="img-motor/6.png" class="card-img-top" alt="Ventilador adaptable de aluminio">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Ventilador adaptable de aluminio</h5>
                         </div>
@@ -127,9 +127,9 @@
             </div>
             <!-- Producto 7 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/7.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/7.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(59)">
                     <div class="card h-100">
-                        <img src="img-motor/7.png" class="card-img-top" alt="Producto 7">
+                        <img src="img-motor/7.png" class="card-img-top" alt="Caja de bornas de plástico">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Caja de bornas de plástico</h5>
                         </div>
@@ -138,9 +138,9 @@
             </div>
             <!-- Producto 8 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/8.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/8.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(60)">
                     <div class="card h-100">
-                        <img src="img-motor/8.png" class="card-img-top" alt="Producto 8">
+                        <img src="img-motor/8.png" class="card-img-top" alt="Caja de bornas metálica">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Caja de bornas metálica</h5>
                         </div>
@@ -148,9 +148,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/9.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/9.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(61)">
                     <div class="card h-100">
-                        <img src="img-motor/9.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/9.png" class="card-img-top" alt="Placa de bornas adaptable">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Placa de bornas adaptable</h5>
                         </div>
@@ -158,9 +158,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/10.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/10.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(62)">
                     <div class="card h-100">
-                        <img src="img-motor/10.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/10.png" class="card-img-top" alt="Protector de ventilador">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Protector de ventilador</h5>
                         </div>
@@ -168,9 +168,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/11.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/11.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(63)">
                     <div class="card h-100">
-                        <img src="img-motor/11.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/11.png" class="card-img-top" alt="Condensador de arranque">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Condensador de arranque</h5>
                         </div>
@@ -178,9 +178,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/12.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/12.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(64)">
                     <div class="card h-100">
-                        <img src="img-motor/12.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/12.png" class="card-img-top" alt="Condensador permanente">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Condensador permanente</h5>
                         </div>
@@ -188,9 +188,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/13.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/13.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(65)">
                     <div class="card h-100">
-                        <img src="img-motor/13.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/13.png" class="card-img-top" alt="Juego de escobillas para herramienta">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Juego de escobillas para herramienta</h5>
                         </div>
@@ -198,9 +198,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/14.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/14.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(66)">
                     <div class="card h-100">
-                        <img src="img-motor/14.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/14.png" class="card-img-top" alt="Escobillas de carbón a medida">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Escobillas de carbón a medida</h5>
                         </div>
@@ -208,9 +208,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/15.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/15.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(67)">
                     <div class="card h-100">
-                        <img src="img-motor/15.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/15.png" class="card-img-top" alt="Porta-escobillas">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Porta-escobillas</h5>
                         </div>
@@ -218,9 +218,9 @@
                 </a>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="img-motor/16.png" class="text-decoration-none text-dark" target="_blank">
+                <a href="img-motor/16.png" class="text-decoration-none text-dark" target="_blank" onclick="openProduct(68)">
                     <div class="card h-100">
-                        <img src="img-motor/16.png" class="card-img-top" alt="Producto 4">
+                        <img src="img-motor/16.png" class="card-img-top" alt="Poleas de motor">
                         <div class="card-body  btn btn-primary border border-primary">
                             <h5 class="card-title">Poleas de motor</h5>
                         </div>
@@ -232,6 +232,9 @@
                 <button type="button" class="btn btn-primary">Volver a Productos</button></a>
             </div> 
         </div>
+    </div>
+    <div class="adorno mb-4 fade-in">
+        <img src="assets/addd.png" alt="Carigue Aislantes. Desde 2005">
     </div>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
@@ -245,6 +248,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
+
+<script>
+    function openProduct(productId) {
+    window.location.href = `tipos.html?id=${productId}`;
+    }
+</script>
 
 </body>
 </html>
