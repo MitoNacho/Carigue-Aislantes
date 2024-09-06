@@ -46,7 +46,7 @@
             <!-- Listado de productos -->
             <div class="row mt-4 ms-2 me-2 text-center">
                 <div class="container-fluid col-12 col-md-6 mb-4">
-                    <h1 id="product-name"></h1>
+                    <h1 id="product-name" class="tprod"></h1>
                     <div id="product-types" class="product-types">
                         <!-- Aquí se mostrarán los tipos de productos -->
                     </div>
@@ -99,9 +99,9 @@
                         id: 2,
                         name: 'Cartón Tercott',
                         types: [
-                            { name: 'Tercott-CF', description: '' },
-                            { name: 'Tercott-K', description: '' },
-                            { name: 'Tercott-MTS', description: '' }
+                            { name: 'Tercott-CF', description: 'El aislante flexible TERCOTT "CF" está compuesto por un Film de Poliéster (PETP), un soporte de cartón  dieléctrico Presspan 3040 verde (fibras duras y altamente resistentes)  y un adhesivo termoestable. El cartón así formado, posee una gran rigidez mecánica. Es adecuado para el aislamiento de ranuras de motores eléctricos. ' },
+                            { name: 'Tercott-K', description: 'El aislante flexible TERCOTT "K" está compuesto por un Film de Poliéster (PETP)  un soporte de papel Kraft dieléctrico calandrado y un adhesivo termoestable. Se utiliza en el aislamiento de entre-fase de transformadores y reactancias.' },
+                            { name: 'Tercott-MTS', description: 'Este aislante flexible está compuesto por un Film de Poliéster (PETP) recubierto por ambas caras con fibras de poliéster y adhesivo termoestable. Se utiliza principalmente para la construcción y reparación de motores y transformadores que requieren altas resistencias mecánicas, dieléctricas y térmicas.' }
                         ]
                     },
 
@@ -810,8 +810,8 @@
                         let typeDetails = `
                             <div class="card mb-3">
                                 <div class="card-body">
-                                    <h5 class="card-title fw-bold">${type.name}</h5>
-                                    <p class="card-text">${type.description}</p>
+                                    <h5 class="card-product">${type.name}</h5>
+                                    <p class="card-text fw-des">${type.description}</p>
                                                                         
                         `;
                         // Verifica si existe el PDF para mostrar el botón
