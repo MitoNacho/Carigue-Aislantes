@@ -99,9 +99,9 @@
                         id: 2,
                         name: 'Cartón Tercott',
                         types: [
-                            { name: 'Tercott-CF', description: '' , pdf: '/Carigue-Aislantes/fichacarton/CF.pdf' },
-                            { name: 'Tercott-K', description: '', pdf: '/Carigue-Aislantes/fichacarton/K.pdf' },
-                            { name: 'Tercott-MTS', description: '', pdf: '/Carigue-Aislantes/fichacarton/mts.pdf' }
+                            { name: 'Tercott-CF', description: '' },
+                            { name: 'Tercott-K', description: '' },
+                            { name: 'Tercott-MTS', description: '' }
                         ]
                     },
 
@@ -110,7 +110,7 @@
                         id: 3,
                         name: '',
                         types: [
-                            { name: 'Thernophase', description: 'Grosor: 0,30mm / 0,40mm', pdf: '/Carigue-Aislantes/fichacarton/thernophase.pdf' }
+                            { name: 'Thernophase', description: 'Grosor: 0,30mm / 0,40mm' }
                         ]
                     },
 
@@ -310,7 +310,7 @@
                         id: 27,
                         name: '',
                         types: [
-                            { name: 'Cuñas Triplex F20.08', description: '', pdf: '/Carigue-Aislantes/fichacuna/triplex.pdf' }
+                            { name: 'Cuñas Triplex F20.08', description: '' }
                         ]
                     },
 
@@ -318,7 +318,7 @@
                         id: 28,
                         name: '',
                         types: [
-                            { name: 'Cuñas Thernomid 10.04', description: '', pdf: '/Carigue-Aislantes/fichacuna/thernomid.pdf' }
+                            { name: 'Cuñas Thernomid 10.04', description: '' }
                         ]
                     },
 
@@ -816,7 +816,7 @@
                         `;
                         // Verifica si existe el PDF para mostrar el botón
                 if (type.pdf) {
-                    typeDetails += `<a href="${type.pdf}" target="_blank" class="btn btn-primary zoom-on-haver">Ver Ficha Técnica</a>`;
+                    typeDetails += `<a href="${type.pdf}" target="_blank" class="btn btn-primary zoom-on-haver fw-semibold">Más información</a>`;
                 }
                 
                 typeDetails += `
