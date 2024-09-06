@@ -131,6 +131,21 @@ h1, .h1 {
   }
 }
 
+h1.tprod {
+  font-size: 1.5rem;
+  color: #1627e5;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(60deg, #151eff, #ffff09, #151eff);
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+  
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
@@ -4211,6 +4226,18 @@ textarea.form-control-lg {
   margin-bottom: var(--bs-card-title-spacer-y);
 }
 
+.card-product {
+  font-size: 1.2rem;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(90deg, #151eff, #151eff);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .card-subtitle {
   margin-top: calc(-0.5 * var(--bs-card-title-spacer-y));
   margin-bottom: 0;
@@ -8013,6 +8040,18 @@ textarea.form-control-lg {
 
 .fw-normal {
   font-weight: 400 !important;
+}
+
+.fw-des {
+  font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    padding: 15px 20px;
+    border-left: 5px solid #151eff;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .fw-bold {
